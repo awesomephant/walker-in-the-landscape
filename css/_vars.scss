@@ -1,0 +1,59 @@
+@font-face {
+    font-family: cp;
+    src: url("/assets/fonts/Courier Prime.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: cp;
+    src: url("/assets/fonts/Courier Prime Bold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: cps;
+    src: url("/assets/fonts/Courier Prime Sans.ttf") format("truetype")
+}
+
+
+@mixin bp($point) {
+    @if $point==xl {
+        @media (min-width: 85rem) {
+            @content;
+        }
+    }
+
+    @if $point==l {
+        @media (min-width: 70rem) {
+            @content;
+        }
+    }
+
+    @else if $point==m {
+        @media (min-width: 45rem) {
+            @content;
+        }
+    }
+
+    @else if $point==s {
+        @media (min-width: 35rem) {
+            @content;
+        }
+    }
+}
+
+:root {
+    --font-text: 'Untitled Sans', sans-serif;
+    --font-display: 'Franklin Gothic', sans-serif;
+    --lightgray: #f5f4ed;
+    --ratio: 1.33;
+    --ms-0: 18px;
+    --ms--1: calc(var(--ms-0) / var(--ratio));
+    --ms-1: calc(var(--ms-0) * var(--ratio));
+    --ms-2: calc(var(--ms-1) * var(--ratio));
+    --ms-3: calc(var(--ms-2) * var(--ratio));
+    --ms-4: calc(var(--ms-3) * var(--ratio));
+    --ms-5: calc(var(--ms-4) * var(--ratio));
+    --ms-6: calc(var(--ms-5) * var(--ratio));
+    --ms-7: calc(var(--ms-6) * var(--ratio));
+}

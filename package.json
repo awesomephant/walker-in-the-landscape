@@ -1,0 +1,23 @@
+{
+  "name": "sian-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy;gulp images",
+    "start": "npx @11ty/eleventy --serve",
+    "predeploy": "npx @11ty/eleventy",
+    "deploy": "gh-pages -d _site"
+  },
+  "author": "Max Kohler",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "eleventy-plugin-sass": "^1.0.0",
+    "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset"
+  },
+  "dependencies": {
+    "typeset": "^0.2.9"
+  }
+}

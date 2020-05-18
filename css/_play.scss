@@ -1,0 +1,30 @@
+.play {
+    max-width: 40em;
+    font-size: var(--ms-0);
+    line-height: 1.42;
+    letter-spacing: .04em;
+    word-spacing: -.01em;
+    h3 {
+        text-align: center;
+        font-weight: 400;
+    }
+    p {
+        margin-bottom: 1em;
+        hyphens: auto;
+    }
+    strong {
+        font-weight: 400;
+        color: #6b5b16;
+    }
+}
+
+.section-header {
+    text-align: center;
+    margin-top: 15em;
+    margin-bottom: 10em;
+    h2 {
+        color: #6b5b16;
+        margin-bottom: .5em;
+        font-weight: normal;
+    }
+}
