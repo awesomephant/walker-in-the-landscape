@@ -1,7 +1,7 @@
 ---
 layout: base
-title: The Walker In The Landscape
-subTitle: A Performance for The Landscape 
+title: The Walker in the Landscape
+subTitle: A Story for the Landscape 
 byline: Written by Caitlin Kiely 
 ---
 
