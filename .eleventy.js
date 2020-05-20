@@ -1,17 +1,21 @@
 const pluginSass = require("eleventy-plugin-sass");
 
 module.exports = function (eleventyConfig) {
+
+
     eleventyConfig.addShortcode("fig", function (url, caption) {
         return (
             `<figure><img loading="lazy" src='/assets/${url}'/><figcaption>${caption}</figcaption></figure>
             `
         );
     });
-
     eleventyConfig.addPairedShortcode("header", function (content) {
         return `<header class='section-header'>${content}</header>`
     });
-    
+    eleventyConfig.addPairedShortcode("footer", function (content) {
+        return `<footer class='play-footer'>${content}</footer>`
+    });
+
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("/*.png");
@@ -21,4 +25,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("site.webmanifest");
 
     eleventyConfig.addPlugin(pluginSass, {});
+
+    return {}
 };

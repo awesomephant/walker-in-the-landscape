@@ -15,6 +15,8 @@
     src: url("/assets/fonts/Courier Prime Sans.ttf") format("truetype")
 }
 
+@import url("https://use.typekit.net/vlg1sjx.css");
+
 
 @mixin bp($point) {
     @if $point==xl {
@@ -43,11 +45,12 @@
 }
 
 :root {
-    --font-text: 'Untitled Sans', sans-serif;
+    --font-text: 'franklin-gothic-urw', sans-serif;
     --font-display: 'Franklin Gothic', sans-serif;
-    --lightgray: #f5f4ed;
+    --lightgray: #f3f3f3;
+    --highlight: #9b723e;
     --ratio: 1.33;
-    --ms-0: 18px;
+    --ms-0: 21px;
     --ms--1: calc(var(--ms-0) / var(--ratio));
     --ms-1: calc(var(--ms-0) * var(--ratio));
     --ms-2: calc(var(--ms-1) * var(--ratio));

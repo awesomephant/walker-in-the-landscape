@@ -4,9 +4,15 @@
 {% include head.liquid %}
 
 <body class='{{ page.class }} layout-{{page.layout}}'>
+  <header class="site-header">
+    <h1>{{title}}</h1>
+    <h2>{{subTitle}}</h2>
+    <p class='byline'>{{byline}}</p>
+  </header>
   <article class="play">
-    {{ content}}
+    {{ content }}
   </article>
+  <script src='{{"/js/site.js" | url }}'></script>
 </body>
 
 </html>
