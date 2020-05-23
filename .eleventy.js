@@ -16,6 +16,10 @@ module.exports = function (eleventyConfig) {
         return `<footer class='play-footer'>${content}</footer>`
     });
 
+    eleventyConfig.addPairedShortcode("image", function (content, url) {
+        return `<p data-image="${url}">${content}</p>`
+    });
+
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("/*.png");

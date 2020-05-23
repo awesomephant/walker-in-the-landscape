@@ -417,7 +417,9 @@ Got there first. They’ve prized the book apart, they’ve ripped pages out and
 
 Narrator
 
-Leaving just a jagged frill down the internal spine of the book. 
+{% image "/assets/jagged.jpg" %}
+Leaving just a jagged frill down the internal spine of the book.
+{% endimage %}
 
 Narrator
 
