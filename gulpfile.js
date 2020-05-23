@@ -10,8 +10,18 @@ gulp.task('images', () =>
     gulp.src('./documentation/images/*.{jpg,jpeg,JPG,JPEG,png,PNG}')
         .pipe(srcset([
             {
-                format: ['webp'],
+                processing: {
+                    jpg: {
+                        quality: 90
+                    }
+                },
+                optimization: {
+                    jpg: mozjpeg({
+                        quality: 90
+                    }),
+                },
                 width: sizes,
+                // Change the following to "skipOptimization: true" to speed up conversion.
                 skipOptimization: false,
             }
         ]))

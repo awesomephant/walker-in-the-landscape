@@ -6,7 +6,7 @@ fs.readdir('./assets/images/', (err, files) => {
     let links = []
     files.forEach(f => {
         console.log(f)
-        links.push(`<link rel="prefetch" href="/assets/images/${f}" />`)
+        links.push(`<link rel="prefetch" href="/assets/images/${f}" as="image"/>`)
     })
 
     console.log(`${links.length} images found.`)
