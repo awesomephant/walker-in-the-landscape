@@ -175,7 +175,7 @@ I pull her in, close.
 
 Narrator 
 
-She drapes herself around his shoulders, And flows down him- Like a fine piece of silk... 
+She drapes herself around his shoulders, And flows down him– <span data-id='silk' data-video="/assets/videos/silk.mp4">Like a fine piece of silk...</span> 
 
 Walker 
 

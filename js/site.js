@@ -53,6 +53,21 @@ function initImages() {
             document.body.classList.remove('overlay-active')
         })
     })
+    
+    const videoParagraphs = document.querySelectorAll(`[data-video]`)
+    videoParagraphs.forEach(p => {
+        const v = state.overlay.el.querySelector(`#${p.getAttribute('data-id')}`)
+        p.addEventListener('mouseover', () => {
+            state.overlay.el.style.backgroundImage = `none`
+            v.classList.add('active')
+            document.body.classList.add('overlay-active')
+        })
+        p.addEventListener('mouseout', () => {
+            v.classList.remove('active')
+            document.body.classList.remove('overlay-active')
+        })
+    })
+
 }
 
 window.addEventListener('DOMContentLoaded', () => {

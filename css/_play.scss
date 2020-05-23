@@ -85,9 +85,9 @@
     top: 0;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 300ms;
-    transition-delay: 50ms;
     width: 70vw;
+    transition-delay: 100ms;
+    transition: opacity 400ms;
     height: 70vh;
     background-size: contain;
     background-position: center;
@@ -95,9 +95,18 @@
     .overlay-active & {
         opacity: 1;
     }
+    video {
+        width: 100%;
+        transition: opacity 300ms;
+        transform: translateY(50%);
+        opacity: 0;
+        &.active {
+            opacity: 1;
+        }
+    }
 }
 
-[data-image] {
+[data-image], [data-video] {
     position: relative;
     display: inline-block;
     transition: 300ms;
@@ -107,7 +116,5 @@
         color: white;
         z-index: 1000;
 
-    }
-    .overlay-active & {
     }
 }

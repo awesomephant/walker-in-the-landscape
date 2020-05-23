@@ -37,7 +37,6 @@ module.exports = function (eleventyConfig) {
             const processed = content.replace(/(.jpg)|(.jpeg)/gi, '@1200w.jpg')
             return processed;
         }
-
         return content;
     })
 
