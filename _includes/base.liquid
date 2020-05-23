@@ -10,10 +10,9 @@
     <p class='byline'>{{byline}}</p>
   </header>
   <article class="play">
-    {{ content }}
+    {{ content | safe }}
   </article>
   <div class="overlay-image">
-    <img src="/assets/jagged.jpg" alt="">
   </div>
   <script src='{{"/js/site.js" | url }}'></script>
 </body>

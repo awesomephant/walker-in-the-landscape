@@ -352,13 +352,16 @@ Walker
 
 I walked towards the edge of the forest, And took a deep breath in anticipation. Knowing it was here that I could begin to see Her in the distance. The part of the journey which always assured me that I was close. 
 
-Narrator From here He could always approximate the distance from Her in steps. In order to leave through the edge of the forest ... 
+Narrator
+
+From here He could always approximate the distance from Her in steps. In order to leave through the edge of the forest ... 
 
 Walker 
 
 ...I batted down the branches to carve out a clearing for myself to step through. 
 
-Narrator 
+Narrator
+
 He had to draw back the branches of the trees - The same trees He first came to know in their infancy. 
 
 Walker 
@@ -417,9 +420,7 @@ Got there first. They’ve prized the book apart, they’ve ripped pages out and
 
 Narrator
 
-{% image "/assets/jagged.jpg" %}
-Leaving just a jagged frill down the internal spine of the book.
-{% endimage %}
+<span data-image='/assets/images/jagged.jpg'>Leaving just a jagged frill down the internal spine of the book.</span>
 
 Narrator
 
@@ -454,17 +455,15 @@ I walked the same few steps towards Her, But this time She wasn’t waiting with
 
 Narrator 
 
-Her once softly sweeping curves were now sharp and angular. Her cheeks were hollowed out and sunken, But were showing gradual signs of filling back out again. 
-Her back was turned away, Shielding herself from view. 
+<span data-image="/assets/images/sharp.jpg">Her once softly sweeping curves were now sharp and angular.</span> Her cheeks were hollowed out and sunken, But were <span data-image="/assets/images/filling-back-out.jpg">showing gradual signs of filling back out again.</span> Her back was turned away, Shielding herself from view. 
 
 Walker 
 
-I couldn’t get to Her, To reach and touch Her. 
-All of the usual entry points and paths to Her, Were now tightly hemmed in. Her entire perimeter was sealed off. She was encased, Trapped..... 
+I couldn’t get to Her, To reach and touch Her. <span data-image="/assets/images/points.jpg">All of the usual entry points and paths to Her</span>, Were now tightly hemmed in. Her entire <span data-image="/assets/images/sealed.jpg">perimeter was sealed off</span>. She was encased, Trapped..... 
 
 Narrator 
 
-...Protected behind thick walls of bracken - Razor sharp, Too impenetrable to pass through by foot. 
+<span data-image="/assets/images/thick.jpg">...Protected behind thick walls of bracken</span> - Razor sharp, Too impenetrable to pass through by foot. 
 
 As though She’d instructed them to close Her in. To give Her a break. For She was old now, She needed some rest. Time to tend to her own needs first, before that of others. 
 
@@ -474,9 +473,9 @@ She, Still above. He, Still below, Looking up.
 
 Except now, He was forced to view Her differently. 
 
-As there was no classical beauty left. He could now only see beyond that. 
+As there was <span data-image="/assets/images/classical.jpg">no classical beauty left.</span> He could now only see beyond that. 
 
-Like Her ability to wear Her story on Her surface like that. As well as everyone else’s that had been inscribed into, and etched onto Her. 
+Like Her ability to wear Her story on Her surface like that. As well as everyone else’s that had been <span data-image="/assets/images/etched.jpg">inscribed into, and etched onto Her</span>. 
 
 He stayed quiet, He knew better than to disturb Her. 
 

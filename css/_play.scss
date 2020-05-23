@@ -86,28 +86,28 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 300ms;
-
+    transition-delay: 150ms;
+    width: 70vw;
+    height: 70vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     .overlay-active & {
         opacity: 1;
-    }
-
-    img {
-        max-width: 70vw;
-        max-height: 70vh;
-        transform: translateX(-50%) translateY(-50%);
     }
 }
 
 [data-image] {
     position: relative;
-    z-index: 1000;
     display: inline-block;
     transition: 300ms;
     cursor: pointer;
-    border-bottom: 3px solid #dddddd;
-    
-    .overlay-active & {
-        border-bottom: 3px solid transparent;
+    color: var(--highlight);
+    &:hover, &:focus {
         color: white;
+        z-index: 1000;
+
+    }
+    .overlay-active & {
     }
 }

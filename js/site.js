@@ -23,30 +23,30 @@ function updateOverlay() {
     state.overlay.x += (state.overlay.targetX - state.overlay.x) * .1;
     state.overlay.y += (state.overlay.targetY - state.overlay.y) * .1;
 
-    state.overlay.el.style.transform = `translateX(${state.overlay.x}px) translateY(${state.overlay.y}px)`
+    state.overlay.el.style.transform = `translateX(calc(${state.overlay.x}px - 50%)) translateY(calc(${state.overlay.y}px - 50%))`
 
     window.requestAnimationFrame(updateOverlay)
 }
 
 function typeset(selector) {
     const paragraphs = document.querySelectorAll(`${selector} p`)
-
-    paragraphs.forEach(p => {
-        let content = p.textContent;
-
+    for (let i = 0; i < paragraphs.length; i++) {
+        let content = paragraphs[i].textContent;
+        const x = gra(-10, 10);
+        paragraphs[i].style.left = `${x}%`
         if (content === 'Narrator' || content === 'Walker') {
-            p.classList.add('speaker')
+            paragraphs[i].classList.add('speaker')
+            paragraphs[i + 1].style.left = `${x}%`;
+            i += 1;
         }
-        p.style.left = `${gra(-10, 10)}%`
-        content = content.replace(/-/g, '–')
-        p.textContent = content;
-    })
+    }
 }
 
-function initImages(){
+function initImages() {
     const paragraphs = document.querySelectorAll(`[data-image]`)
     paragraphs.forEach(p => {
         p.addEventListener('mouseover', () => {
+            state.overlay.el.style.backgroundImage = `url(${p.getAttribute('data-image')})`
             document.body.classList.add('overlay-active')
         })
         p.addEventListener('mouseout', () => {
