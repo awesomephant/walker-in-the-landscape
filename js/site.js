@@ -45,6 +45,15 @@ function typeset(selector) {
 function initImages() {
     const paragraphs = document.querySelectorAll(`[data-image]`)
     paragraphs.forEach(p => {
+        const path = p.getAttribute('data-image')
+        let newPath = "";
+        if (path.includes('.jpg')) {
+            newPath = path.replace(/(.jpg)|(.jpeg)/gi, '@1200w.jpg')
+        } else if (path.includes('.png')){
+            newPath = path.replace(/(.png)/gi, '@1200w.png');
+        }
+        
+        p.setAttribute('data-image', newPath)
         p.addEventListener('mouseover', () => {
             state.overlay.el.style.backgroundImage = `url(${p.getAttribute('data-image')})`
             document.body.classList.add('overlay-active')
