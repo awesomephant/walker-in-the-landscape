@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addTransform("swapImagePaths", function (content, outputPath) {
         if (outputPath.endsWith(".html")) {
-            const processed = content.replace(/(.jpg)|(.jpeg)/gi, '@1200w.jpg')
+            const processed = content.replace(/(.jpg)|(.jpeg)/gi, '@1200w.jpg').replace(/(.png)/gi, '@1200w.png')
             return processed;
         }
         return content;

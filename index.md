@@ -21,8 +21,9 @@ Narrator
 
 There She stands. 
 
-She, above. He, below. Her head in the clouds, sometimes. Yet her feet firmly anchored to the ground. 
-He. Stands on this ground. Looking up. Admiringly. In awe of the view. The same view which both envelops and dwarfs Him, Her. 
+She, above. He, below. Her head in the clouds, sometimes. Yet her feet firmly anchored to the ground.
+
+<span data-id='ground' data-video="/assets/videos/stands-on-ground.mp4">He. Stands on this ground. Looking up.</span> Admiringly. In awe of the view. The same view which both envelops and dwarfs Him, Her. 
 
 {% header %}
 
@@ -32,13 +33,13 @@ He. Stands on this ground. Looking up. Admiringly. In awe of the view. The same 
 
 Narrator 
 
-He first found Her, Through walking in search of Her. A place of outstanding natural beauty. 
+He first found Her, Through walking in search of Her. A place of outstanding natural beauty.
 
 Alone He walked, with an image of Her in his back pocket. Something He referred to along the way - To guide him. To make sure He could find Her exact location. 
 
 Reduced to a few inanimate lines on the page of the map, That he so longingly gripped in his hands - Here, She represented nothing of herself. 
 
-On the page, She was a few concentric lines, Expressed neatly within the confines of a rigid structure. Here, She was static, Fixed, Compressed. Scaled down, Manageable - 
+On the page, She was a few concentric lines, Expressed neatly within the confines of a rigid structure. <span data-image="/assets/images/static.jpg">Here, She was static, Fixed</span>, Compressed. Scaled down, Manageable - 
 
 Just the right size to be folded and held within the human hands, Comfortably. 
 
@@ -46,7 +47,7 @@ For it is in this form, that He can observe Her more closely and in greater deta
 
 So that He can find Her. So that He can enjoy Her. So that He can be at one, with Her. 
 
-In this form, He reads of Her, about Her. As He has not yet met or experienced Her. As though She is just words and images on a page. Not Her own words though - Someone else’s. Of Her. About Her. Just focusing on Her external features And Her dimensions, It is this which He interprets, This - which makes him start walking. 
+In this form, He reads of Her, about Her. As He has not yet met or experienced Her. <span data-image="/assets/images/book.png">As though She is just words and images on a page.</span> Not Her own words though - Someone else’s. Of Her. About Her. Just focusing on Her external features And Her dimensions, It is this which He interprets, This - which makes him start walking. 
 
 {% header %}
 
@@ -58,7 +59,7 @@ In this form, He reads of Her, about Her. As He has not yet met or experienced H
 
 Walker 
 
-And there She was, waiting in the distance... 
+<span data-id='waiting' data-video="/assets/videos/waiting.mp4">And there She was, waiting in the distance...</span> 
 
 Narrator 
 
@@ -101,7 +102,7 @@ But penetrates through her tiny cinched waist. Her every curve and smooth line, 
 
 Narrator 
 
-...She lay clothed in vast swathes of light. Shadows cast upon Her skin as She blocks the sunlight in its tracks. For many, this -...
+...She lay clothed in vast swathes of light. <span data-image="/assets/images/shadows.jpg">Shadows cast upon Her skin</span> as She blocks the sunlight in its tracks. For many, this -...
 
 Walker 
 
@@ -195,7 +196,7 @@ Walker
 
 Narrator 
 
-He opens His eyes, looks out from where they both stand, and hears nothing. 
+<span data-id='eyes' data-video="/assets/videos/eyes.mp4">He opens His eyes, looks out</span> from where they both stand, and hears nothing. 
 
 Walker 
 
@@ -229,7 +230,7 @@ A feeling that escapes words A feeling that needs no words, It just is.
 
 Narrator 
 
-She flows in Him, with Him, through Him. Then out of Him. She brings it all to the surface. With such effortless grace. 
+<span data-id='flows' data-video="/assets/videos/flows.mp4">She flows in Him, with Him, through Him. Then out of Him.</span> She brings it all to the surface. With such effortless grace. 
 
 And for once He doesn’t fight it, She was in control. 
 
@@ -274,7 +275,7 @@ It’s as though I’m witnessing myself from the outside, As well as the inside
 
 Narrator 
 
-There was no hiding with Her. 
+<span data-image="/assets/images/hiding.png">There was no hiding with Her.</span> 
 
 Walker 
 
@@ -282,7 +283,7 @@ She had the ability to see, And cut through it all - But I couldn’t stop, She 
 
 Narrator 
 
-The sun started to come down and settle in around them. 
+<span data-image="/assets/images/sunset.jpg">The sun started to come down and settle in around them.</span> 
 
 Walker 
 
@@ -331,7 +332,7 @@ Walker
 
 Retracing my steps back there - To Her was like picking up a book that you’d stowed away in the attic a while back. 
 
-You know where it is, You don’t forget about it. You’re just secure in the knowledge that it's there, where you left it, should you ever want or need it later. 
+<span data-id='waiting' data-video="/assets/videos/waiting.mp4">You know where it is</span>, You don’t forget about it. You’re just secure in the knowledge that it's there, where you left it, should you ever want or need it later. 
 
 Narrator
 
@@ -350,7 +351,7 @@ Sure, I walked the same way I always had. Expecting to reach all the same turnin
 
 Walker 
 
-I walked towards the edge of the forest, And took a deep breath in anticipation. Knowing it was here that I could begin to see Her in the distance. The part of the journey which always assured me that I was close. 
+<span data-image="/assets/images/edge.jpg">I walked towards the edge of the forest</span>, And took a deep breath in anticipation. Knowing it was here that I could begin to see Her in the distance. The part of the journey which always assured me that I was close. 
 
 Narrator
 
@@ -370,7 +371,7 @@ It was evident no one had ventured this way in a while.
 
 Narrator 
 
-Now, strong and established, The trees provided a screen from the outside. 
+Now, strong and established, <span data-id='screen' data-video="/assets/videos/screen.mp4">The trees provided a screen from the outside.</span> 
 
 Walker 
 

@@ -21,7 +21,6 @@ gulp.task('images', () =>
                     }),
                 },
                 width: sizes,
-                // Change the following to "skipOptimization: true" to speed up conversion.
                 skipOptimization: false,
             }
         ]))
