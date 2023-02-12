@@ -1,0 +1,203 @@
+@font-face {
+  font-family: cp;
+  src: url("/assets/fonts/Courier Prime.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: cp;
+  src: url("/assets/fonts/Courier Prime Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: cps;
+  src: url("/assets/fonts/Courier Prime Sans.ttf") format("truetype");
+}
+
+@import url("https://use.typekit.net/vlg1sjx.css");
+
+@mixin bp($point) {
+  @if $point==xl {
+    @media (min-width: 85rem) {
+      @content;
+    }
+  }
+
+  @if $point==l {
+    @media (min-width: 70rem) {
+      @content;
+    }
+  } @else if $point==m {
+    @media (min-width: 45rem) {
+      @content;
+    }
+  } @else if $point==s {
+    @media (min-width: 35rem) {
+      @content;
+    }
+  }
+}
+
+:root {
+  --font-text: "franklin-gothic-urw", sans-serif;
+  --font-display: "Franklin Gothic", sans-serif;
+  --lightgray: #e6e6e9;
+  --highlight: #417441;
+  --black: #050505;
+  --ratio: 1.33;
+  --ms-0: 21px;
+  --ms--1: calc(var(--ms-0) / var(--ratio));
+  --ms-1: calc(var(--ms-0) * var(--ratio));
+  --ms-2: calc(var(--ms-1) * var(--ratio));
+  --ms-3: calc(var(--ms-2) * var(--ratio));
+  --ms-4: calc(var(--ms-3) * var(--ratio));
+  --ms-5: calc(var(--ms-4) * var(--ratio));
+  --ms-6: calc(var(--ms-5) * var(--ratio));
+  --ms-7: calc(var(--ms-6) * var(--ratio));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-text);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  background: var(--lightgray);
+}
+
+.site-header {
+  max-width: 42rem;
+  width: 100%;
+  font-size: var(--ms-0);
+  line-height: 1.12;
+  letter-spacing: 0.04em;
+  display: block;
+  padding: 1em;
+  margin-top: 4em;
+}
+
+.site-header h1,
+.site-header h2 {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.site-header h2 {
+  margin-bottom: 0.5em;
+}
+
+.site-header p {
+  letter-spacing: 0.03em;
+  word-spacing: 0.01em;
+}
+
+.play {
+  max-width: 42rem;
+  font-size: var(--ms-0);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  word-spacing: 0.01em;
+  padding-bottom: 10rem;
+}
+
+.play h3 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.play p {
+  margin-bottom: 2em;
+  hyphens: auto;
+  position: relative;
+}
+
+.play .speaker {
+  color: var(--highlight);
+  margin-bottom: 0;
+  mix-blend-mode: multiply;
+  font-size: var(--ms--1);
+}
+
+.section-header {
+  text-align: center;
+  margin-top: 20em;
+  margin-bottom: 15em;
+}
+
+.section-header h2 {
+  mix-blend-mode: multiply;
+  color: var(--highlight);
+  margin-bottom: 0.1em;
+  font-weight: normal;
+}
+
+.play-footer {
+  padding-top: 10em;
+}
+
+.inline-image p {
+  display: inline-block;
+  background-color: rgb(236, 236, 234);
+}
+
+.inline-image img {
+  width: 10em;
+}
+
+.overlay-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 70vw;
+  border: 1px solid rgba(142, 105, 86, 0.477);
+  transition-delay: 100ms;
+  transition: opacity 400ms;
+  height: 70vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay-active .overlay-image {
+  opacity: 1;
+}
+.overlay-image video {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 300ms;
+  opacity: 0;
+  position: absolute;
+}
+
+.overlay-image video.unmount {
+  display: none;
+}
+.overlay-image video.active {
+  opacity: 1;
+}
+
+[data-image],
+[data-video] {
+  position: relative;
+  display: inline-block;
+  transition: 300ms;
+  cursor: pointer;
+  color: var(--highlight);
+}
+
+[data-image]:hover,
+[data-image]:focus,
+[data-video]:hover,
+[data-video]:focus {
+  color: white;
+  z-index: 1000;
+}

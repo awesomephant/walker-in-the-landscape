@@ -7,17 +7,23 @@
 	<meta name="description" content="{% if intro %}{{ intro | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<link rel="stylesheet" href='{{"/css/style.css" | url}}'>
-	
+
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-	{% include prefetch.liquid %}
-	
-	<link rel="prefetch" href="/assets/videos/silk.mp4"></link>
-    <link rel="prefetch" href="/assets/videos/eyes.mp4"></link>
-    <link rel="prefetch" href="/assets/videos/flows.mp4"></link>
-    <link rel="prefetch" href="/assets/videos/screen.mp4"></link>
-    <link rel="prefetch" href="/assets/videos/waiting.mp4"></link>
-    <link rel="prefetch" href="/assets/videos/stands-on-ground.mp4"></link>
+	{% include "prefetch" %}
+
+	<link rel="prefetch" href="/assets/videos/silk.mp4">
+	</link>
+	<link rel="prefetch" href="/assets/videos/eyes.mp4">
+	</link>
+	<link rel="prefetch" href="/assets/videos/flows.mp4">
+	</link>
+	<link rel="prefetch" href="/assets/videos/screen.mp4">
+	</link>
+	<link rel="prefetch" href="/assets/videos/waiting.mp4">
+	</link>
+	<link rel="prefetch" href="/assets/videos/stands-on-ground.mp4">
+	</link>
 
 </head>

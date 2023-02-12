@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% include head.liquid %}
+{% include 'head' %}
 
 <body class='{{ page.class }} layout-{{page.layout}}'>
   <header class="site-header">
@@ -10,15 +10,15 @@
     <p class='byline'>{{byline}}</p>
   </header>
   <article class="play">
-    {{ content | safe }}
+    {{ content }}
   </article>
   <div class="overlay-image">
-    <video class='unmount' id='silk'    src="/assets/videos/silk.mp4"  muted loop></video>
-    <video class='unmount' id='eyes'    src="/assets/videos/eyes.mp4"  muted loop></video>
-    <video class='unmount' id='flows'   src="/assets/videos/flows.mp4"  muted loop></video>
-    <video class='unmount' id='screen'  src="/assets/videos/screen.mp4"  muted loop></video>
-    <video class='unmount' id='waiting' src="/assets/videos/waiting.mp4"  muted loop></video>
-    <video class='unmount' id='ground'  src="/assets/videos/stands-on-ground.mp4"  muted loop></video>
+    <video class='unmount' id='silk' src="/assets/videos/silk.mp4" muted loop></video>
+    <video class='unmount' id='eyes' src="/assets/videos/eyes.mp4" muted loop></video>
+    <video class='unmount' id='flows' src="/assets/videos/flows.mp4" muted loop></video>
+    <video class='unmount' id='screen' src="/assets/videos/screen.mp4" muted loop></video>
+    <video class='unmount' id='waiting' src="/assets/videos/waiting.mp4" muted loop></video>
+    <video class='unmount' id='ground' src="/assets/videos/stands-on-ground.mp4" muted loop></video>
   </div>
   <script src='{{"/js/site.js" | url }}'></script>
 </body>
